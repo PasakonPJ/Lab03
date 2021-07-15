@@ -23,7 +23,7 @@ export default {
   },
   created() {
     // get events from mock db when component is created
-    EventService.getEvent()
+    EventService.getEvents()
       .then((response) => {
         this.events = response.data
       })
