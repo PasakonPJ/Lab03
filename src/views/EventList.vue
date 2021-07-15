@@ -9,7 +9,7 @@
 // @ is an alias to /src
 // import HelloWorld from '@/components/HelloWorld.vue'
 import EventCard from '@/components/EventCard.vue'
-import axios from 'axios'
+import EventService from '@/services/EventService.js'
 export default {
   name: 'EventList',
   components: {
@@ -23,8 +23,7 @@ export default {
   },
   created() {
     // get events from mock db when component is created
-    axios
-      .get('http://localhost:3004/events')
+    EventService.getEvent()
       .then((response) => {
         this.events = response.data
       })
