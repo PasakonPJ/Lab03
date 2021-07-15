@@ -31,14 +31,13 @@ export default {
 }
 </script>
 
-
 <style scoped>
 .event-card {
-  padding: 20 px;
-  width: 250 px;
+  padding: 20px;
+  width: 250px;
   cursor: pointer;
   border: 1px solid #39495c;
-  margin-bottom: 18 px;
+  margin-bottom: 18px;
 }
 .event-card :hover {
   transform: scale(1.01);
