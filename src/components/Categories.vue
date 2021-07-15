@@ -1,7 +1,7 @@
 <template>
   <div class="category-card">
-   <h5>  {{ category.category }} </h5>
-    <h5> {{ category.organizer}} </h5>
+    <h5>{{ category.category }}</h5>
+    <h5>{{ category.organizer }}</h5>
   </div>
 </template>
 
@@ -17,7 +17,6 @@ export default {
 }
 </script>
 
-
 <style scoped>
 .category-card {
   cursor: pointer;
@@ -28,5 +27,4 @@ export default {
   transform: scale(1.01);
   box-shadow: 0 3px 12px 0 rgba(22, 29, 233, 0.2);
 }
-
 </style>

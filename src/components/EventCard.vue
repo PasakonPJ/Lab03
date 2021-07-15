@@ -4,7 +4,7 @@
     <h4>
       {{ event.title }}
     </h4>
-    <Categories :category="event"/>
+    <Categories :category="event" />
   </div>
 </template>
 
@@ -12,10 +12,8 @@
 import Categories from './Categories.vue'
 export default {
   name: 'EventCard',
-  components: { 
-    
-    Categories 
-  
+  components: {
+    Categories
   },
   props: {
     event: {
@@ -39,5 +37,4 @@ export default {
   transform: scale(1.01);
   box-shadow: 0 3px 12px 0 rgba(22, 29, 233, 0.2);
 }
-
 </style>
