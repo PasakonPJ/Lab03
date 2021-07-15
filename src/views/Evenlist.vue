@@ -1,4 +1,5 @@
 <template>
+  <h1> Event For Good</h1>
   <div class="events">
     <EventCard v-for="event in events" :key="event.id" :event="event" />
   </div>
@@ -11,7 +12,7 @@ import EventCard from '@/components/EventCard.vue'
 
 
 export default {
-  name: 'events',
+  name: 'EventList',
   components: {
     // HelloWorld
     EventCard //register it as a child componet
