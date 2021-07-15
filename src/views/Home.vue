@@ -9,11 +9,13 @@
 // import HelloWorld from '@/components/HelloWorld.vue'
 import EventCard from '@/components/EventCard.vue'
 
+
 export default {
   name: 'events',
   components: {
     // HelloWorld
     EventCard //register it as a child componet
+  
   },
   data() {
     return {
@@ -56,3 +58,10 @@ export default {
   }
 }
 </script>
+<style scoped>
+.events {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+</style>
